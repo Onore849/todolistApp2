@@ -36,7 +36,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        table.delegate = self
+        table.dataSource = self
+        
     }
     
 
@@ -53,7 +59,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        cell.textLabel?.text = data[indexPath.row].item
+        
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // open the screen where we can see item into and delete
+        
     }
 
 
