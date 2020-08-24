@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		F8C24D4C24F3B7CE00F2B63A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C24D4A24F3B7CE00F2B63A /* Main.storyboard */; };
 		F8C24D4E24F3B7CF00F2B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C24D4D24F3B7CF00F2B63A /* Assets.xcassets */; };
 		F8C24D5124F3B7CF00F2B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C24D4F24F3B7CF00F2B63A /* LaunchScreen.storyboard */; };
+		F8C24D5924F3C92600F2B63A /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C24D5824F3C92600F2B63A /* EntryViewController.swift */; };
+		F8C24D5B24F3C93900F2B63A /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C24D5A24F3C93900F2B63A /* ViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F8C24D4D24F3B7CF00F2B63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8C24D5024F3B7CF00F2B63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8C24D5224F3B7CF00F2B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C24D5824F3C92600F2B63A /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		F8C24D5A24F3C93900F2B63A /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				E32E4F174E544E28B740D7E3 /* Pods-TodoListApp2.debug.xcconfig */,
 				3CE03B7E66A194E021FF25D1 /* Pods-TodoListApp2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +87,8 @@
 				F8C24D4424F3B7CE00F2B63A /* AppDelegate.swift */,
 				F8C24D4624F3B7CE00F2B63A /* SceneDelegate.swift */,
 				F8C24D4824F3B7CE00F2B63A /* ViewController.swift */,
+				F8C24D5A24F3C93900F2B63A /* ViewViewController.swift */,
+				F8C24D5824F3C92600F2B63A /* EntryViewController.swift */,
 				F8C24D4A24F3B7CE00F2B63A /* Main.storyboard */,
 				F8C24D4D24F3B7CF00F2B63A /* Assets.xcassets */,
 				F8C24D4F24F3B7CF00F2B63A /* LaunchScreen.storyboard */,
@@ -208,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C24D4924F3B7CE00F2B63A /* ViewController.swift in Sources */,
+				F8C24D5924F3C92600F2B63A /* EntryViewController.swift in Sources */,
+				F8C24D5B24F3C93900F2B63A /* ViewViewController.swift in Sources */,
 				F8C24D4524F3B7CE00F2B63A /* AppDelegate.swift in Sources */,
 				F8C24D4724F3B7CE00F2B63A /* SceneDelegate.swift in Sources */,
 			);
