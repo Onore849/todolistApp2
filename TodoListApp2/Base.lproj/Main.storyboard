@@ -103,16 +103,49 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--View View Controller-->
         <scene sceneID="yaP-Zl-nyN">
             <objects>
-                <viewController id="Oai-Z6-ggh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view" id="Oai-Z6-ggh" customClass="ViewViewController" customModule="TodoListApp2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wtd-gw-r20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-VP-XRw">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cAT-jU-w7o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFw-PS-RPv">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mXf-2f-SOy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="oFJ-2Y-EfQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ake-Kk-0Jl" firstAttribute="trailing" secondItem="pFw-PS-RPv" secondAttribute="trailing" constant="20" id="foz-pK-Fgw"/>
+                            <constraint firstItem="jCn-VP-XRw" firstAttribute="leading" secondItem="ake-Kk-0Jl" secondAttribute="leading" constant="20" id="i2A-kb-DJd"/>
+                            <constraint firstItem="ake-Kk-0Jl" firstAttribute="trailing" secondItem="jCn-VP-XRw" secondAttribute="trailing" constant="20" id="p8F-qq-mxq"/>
+                            <constraint firstItem="jCn-VP-XRw" firstAttribute="top" secondItem="ake-Kk-0Jl" secondAttribute="top" constant="20" id="s1b-e0-Mhl"/>
+                            <constraint firstItem="pFw-PS-RPv" firstAttribute="top" secondItem="jCn-VP-XRw" secondAttribute="bottom" constant="10" id="v9z-q0-4JZ"/>
+                            <constraint firstItem="pFw-PS-RPv" firstAttribute="leading" secondItem="ake-Kk-0Jl" secondAttribute="leading" constant="20" id="xOT-TI-qhD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ake-Kk-0Jl"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="pFw-PS-RPv" id="Nla-za-EWh"/>
+                        <outlet property="itemLabel" destination="jCn-VP-XRw" id="2tr-Bn-Kl6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Rc-he-cZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

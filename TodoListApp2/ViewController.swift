@@ -76,6 +76,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // open the screen where we can see item into and delete
         
+        let item = data[indexPath.row]
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "view") as? ViewViewController else {
+            return 
+        }
+        vc.deletionHandler = { [weak self] in
+            
+            self?.refresh()
+        }
+        
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.title = item.item
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
     }
     
     // 遷移する
